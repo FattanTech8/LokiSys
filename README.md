@@ -17,7 +17,8 @@ Method 1: Using Python Script (lokiusb.py)
 4. Modify usb_drive variable in lokiusb.py to match your USB drive letter (D:\ in this example).
 5. Run the script:
 
-Copy code
+Run the code in CMD / Terminal:
+
 python lokiusb.py
 
 
