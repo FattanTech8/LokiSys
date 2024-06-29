@@ -31,7 +31,7 @@ Method 2: Using Executable (lokiusb.exe)
 3. Double-click lokiusb.exe to run it.
 4. System information will be collected and saved into D:\loki6.
 
-Notes
+Notes:
 
 * Ensure the USB drive (D:\) is writable and has sufficient space.
 * Python installation is required only for running lokiusb.py. lokiusb.exe is self-contained and does not require Python.
