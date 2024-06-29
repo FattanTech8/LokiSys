@@ -12,7 +12,7 @@ Usage
 Method 1: Using Python Script (lokiusb.py)
 
 1. Ensure Python is installed on your system.
-2. Clone or download the loki6 project repository.
+2. Clone or download the loki6 project repository and saved it into your USB inside create the folder named "loki6"
 3. Navigate to the directory containing lokiusb.py.
 4. Modify usb_drive variable in lokiusb.py to match your USB drive letter (D:\ in this example).
 5. Run the script:
