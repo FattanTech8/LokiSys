@@ -1,5 +1,5 @@
 # LokiSys
-Loki6 is a Python-based tool designed to gather system information on (Windows OS) and save it to a USB drive. It's useful for forensic purposes or capturing system snapshots.
+LokiSys is a Python-based tool designed to gather system information on (Windows OS) and save it to a USB drive. It's useful for forensic purposes or capturing system snapshots.
 
 Features
 
