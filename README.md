@@ -32,11 +32,11 @@
 4.Output will be saved automatically to D:\loki6.
 
 ### ⚠️ Notes
--Ensure the USB drive is writable and has sufficient space.
--lokiusb.exe is compiled and does not require Python installation.
--This tool is intended for legitimate system analysis and forensic use only.
+1.Ensure the USB drive is writable and has sufficient space.
+2.lokiusb.exe is compiled and does not require Python installation.
+3.This tool is intended for legitimate system analysis and forensic use only.
 
-📁 Output Example
+### 📁 Output Example
 The tool will generate a structured folder on your USB with logs such as:
 ```
 D:\loki6\
@@ -46,10 +46,10 @@ D:\loki6\
 ```
 
 ### 🧪 Forensic Use Cases
--Live system triage in digital forensic investigations
--Rapid metadata acquisition from target endpoints
--Portable reconnaissance tool for field agents or analysts
+1.Live system triage in digital forensic investigations
+2.Rapid metadata acquisition from target endpoints
+3.Portable reconnaissance tool for field agents or analysts
 
-💡 Disclaimer
+### 💡 Disclaimer
 This tool is developed for educational and lawful forensic usage only. Always obtain proper authorization before executing on any system.
 
