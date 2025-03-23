@@ -1,38 +1,55 @@
 # LokiSys
-LokiSys is a Python-based tool designed to gather system information on (Windows OS) and save it to a USB drive. It's useful for forensic purposes or capturing system snapshots.
 
-Features
+**LokiSys** is a lightweight, Python-based system information gathering tool tailored for **Windows OS environments**, designed primarily for **digital forensics**, **incident response**, and **system diagnostics**. It collects key system metadata and stores the output on a connected USB device—enabling **offline evidence acquisition** or **live triage** scenarios.
 
-* Collects system information such as hostname, platform details, IP address, and more.
-* Saves collected information into a structured folder (loki6) on the connected USB drive.
-* Includes an executable (lokiusb.exe) for easy deployment on Windows systems without Python installed.
+---
 
-Usage
+## 🧰 Features
 
-Method 1: Using Python Script (lokiusb.py)
+- Captures critical system details: hostname, OS version, IP address, platform information, and more.
+- Automatically creates a structured folder (`loki6`) on the connected USB drive.
+- Offers both Python script and standalone executable (`lokiusb.exe`) for deployment—no Python installation required on the target machine.
 
-1. Ensure Python is installed on your system.
-2. Clone or download the loki6 project repository and saved it into your USB inside create the folder named "loki6"
-3. Navigate to the directory containing lokiusb.py.
-4. Modify usb_drive variable in lokiusb.py to match your USB drive letter (D:\ in this example).
-5. Run the script:
+---
 
-Run the code in CMD / Terminal:
+## 🚀 Usage
 
-python lokiusb.py
+### 📜 Method 1: Run via Python Script (`lokiusb.py`)
 
+1. Ensure Python is installed on the system.
+2. Clone or download this repository and save it to your USB drive.
+3. Create a folder named `loki6` inside your USB (e.g., `D:\loki6`).
+4. Open `lokiusb.py` and update the `usb_drive` variable to match your USB letter (e.g., `D:\\`).
+5. Run the script using:
 
-1. System information will be collected and saved into D:\loki6.
+   ```bash
+   python lokiusb.py
 
-Method 2: Using Executable (lokiusb.exe)
+### 🧱 Method 2: Run via Executable (lokiusb.exe)
+1.Download lokiusb.exe from the dist folder of this repository.
+2.Connect your USB drive (ensure it's mapped to the correct letter, e.g., D:\).
+3.Double-click lokiusb.exe.
+4.Output will be saved automatically to D:\loki6.
 
-1. Download lokiusb.exe from the project repository's dist directory.
-2. Connect your USB drive and ensure it's mapped to the expected drive letter (D:\ in this example).
-3. Double-click lokiusb.exe to run it.
-4. System information will be collected and saved into D:\loki6.
+### ⚠️ Notes
+-Ensure the USB drive is writable and has sufficient space.
+-lokiusb.exe is compiled and does not require Python installation.
+-This tool is intended for legitimate system analysis and forensic use only.
 
-Notes:
+📁 Output Example
+The tool will generate a structured folder on your USB with logs such as:
+```
+D:\loki6\
+├── system_info.txt
+├── network_info.txt
+└── metadata.log
+```
 
-* Ensure the USB drive (D:\) is writable and has sufficient space.
-* Python installation is required only for running lokiusb.py. lokiusb.exe is self-contained and does not require Python.
+### 🧪 Forensic Use Cases
+-Live system triage in digital forensic investigations
+-Rapid metadata acquisition from target endpoints
+-Portable reconnaissance tool for field agents or analysts
+
+💡 Disclaimer
+This tool is developed for educational and lawful forensic usage only. Always obtain proper authorization before executing on any system.
 
